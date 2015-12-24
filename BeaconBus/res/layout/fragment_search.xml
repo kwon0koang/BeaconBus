@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_sub_color2"
+    android:focusable="true"
+	android:focusableInTouchMode="true" >
+
+    <RadioGroup
+        android:id="@+id/rgSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:checkedButton="@+id/rSearchBus"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@id/rSearchBus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="버스" />
+
+        <RadioButton
+            android:id="@+id/rSearchBusStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="정류장" />
+
+        <RadioButton
+            android:id="@+id/rSearchRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="경로" />
+        
+    </RadioGroup>
+
+    
+    
+    
+    
+    <!-- ====================================================================================================== -->
+    <!-- ====================================================================================================== -->
+	<!-- Search Bus -->
+    <RelativeLayout
+        android:id="@+id/rlSearchBus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rgSearch" >
+
+        <EditText
+            android:id="@+id/etSearchBus"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+	        android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/imgSearchBusX"
+            android:ems="10"
+            android:hint="노선명을 입력하세요." ><requestFocus />
+	    </EditText>
+	    
+	    <ImageView
+	        android:id="@+id/imgSearchBusX"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignTop="@+id/etSearch"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/btn_x" />
+	    
+	    <ListView
+	        android:id="@+id/lvBus"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@+id/etSearchBus"
+	        android:cacheColorHint="#00000000"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp" />
+	    
+    </RelativeLayout>
+    <!-- Search Bus end -->
+    <!-- ====================================================================================================== -->
+    <!-- ====================================================================================================== -->
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- ====================================================================================================== -->
+    <!-- ====================================================================================================== -->
+    <!-- Search BusStop -->
+    <RelativeLayout
+        android:id="@+id/rlSearchBusStop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rgSearch" >
+
+        <EditText
+            android:id="@+id/etSearchBusStop"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+	        android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/imgSearchBusStopX"
+            android:ems="10"
+            android:hint="정류소명/ID를 입력하세요." ><requestFocus />
+	    </EditText>
+	    
+	    <ImageView
+	        android:id="@+id/imgSearchBusStopX"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignTop="@+id/etSearch"
+	        android:src="@drawable/btn_x" />
+	    
+	    <ListView
+	        android:id="@+id/lvBusStop"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@+id/etSearchBusStop"
+	        android:cacheColorHint="#00000000"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp" />
+	    
+    </RelativeLayout>
+    <!-- Search BusStop end -->
+    <!-- ====================================================================================================== -->
+    <!-- ====================================================================================================== -->
+    
+    
+    
+    
+    
+    <!-- ====================================================================================================== -->
+    <!-- ====================================================================================================== -->
+    <!-- Search Route -->
+    <RelativeLayout
+        android:id="@+id/rlSearchRoute"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rgSearch" >
+
+	    <EditText
+	        android:id="@+id/etSearchRouteDeparture"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_above="@+id/imgSearchRouteDestinationX"
+	        android:layout_alignParentLeft="true"
+	        android:layout_toLeftOf="@+id/imgSearchRouteDepartureX"
+	        android:ems="10"
+	        android:hint="출발 정류소명/ID를 입력하세요." />
+
+	    <ImageView
+	        android:id="@+id/imgSearchRouteDepartureX"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:src="@drawable/btn_x" />
+
+	    <EditText
+	        android:id="@+id/etSearchRouteDestination"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginBottom="5dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignTop="@+id/imgSearchRouteDestinationX"
+	        android:layout_toLeftOf="@+id/imgSearchRouteDestinationX"
+	        android:ems="10"
+	        android:hint="도착 정류소명/ID를 입력하세요." >
+
+	        <requestFocus />
+	    </EditText>
+
+	    <ImageView
+	        android:id="@+id/imgSearchRouteDestinationX"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/imgSearchRouteDepartureX"
+	        android:src="@drawable/btn_x" />
+	    
+	    <Button
+	        android:id="@+id/btnSearchRoute"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:background="@color/theme_sub_color"
+        	android:textColor="#ffffff"
+	        android:layout_below="@+id/etSearchRouteDestination"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:textStyle="bold"
+	        android:text="검색" />
+	    
+	    <ListView
+	        android:id="@+id/lvRoute"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@+id/btnSearchRoute"
+	        android:cacheColorHint="#00000000"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp" />
+	    
+    </RelativeLayout>
+    <!-- Search Route end -->
+    <!-- ====================================================================================================== -->
+    <!-- ====================================================================================================== -->
+    
+</RelativeLayout>

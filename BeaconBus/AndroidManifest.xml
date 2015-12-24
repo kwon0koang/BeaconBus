@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dgssm.beaconbus"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+	<uses-feature 
+        android:glEsVersion="0x00020000" 
+        android:required="true"/>
+
+	<!-- 진동 -->
+	<uses-permission android:name="android.permission.VIBRATE" />
+	
+	<!-- 블루투스 관련 -->
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+	
+	<!-- 네트워크 상태 확인 -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	
+    <!-- 서비스 관련 퍼미션 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_SERVICE" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+  
+    <permission android:name="com.app.testgooglemap.permission.MAPS_RECEIVE"
+        			 android:protectionLevel="signature"></permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    
+    <!-- C2DM 권한 설정 -->
+    <permission android:name="com.dgssm.beaconbus.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.dgssm.beaconbus.permission.C2D_MESSAGE" />
+    
+    <!-- 다음 뉴톤톡 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    
+    <!-- 강제 종료 -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Kwon" >
+        
+        <meta-data 
+            android:name="com.google.android.maps.v2.API_KEY" 
+            android:value="AIzaSyAg-2b0wCJwqZX0tkbNOqkt6tdGcOVuetw"/>
+        <meta-data 
+            android:name="com.google.android.gms.version" 
+            android:value="@integer/google_play_services_version"/>
+        
+        <!-- Activity -->
+        <activity
+            android:name="com.dgssm.beaconbus.Logo"
+            android:label="@string/app_name"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dgssm.beaconbus.Main" ></activity>
+        <activity android:name="com.dgssm.beaconbus.searchedactivity.SearchBus" ></activity>
+        <activity android:name="com.dgssm.beaconbus.searchedactivity.SearchBusStop" ></activity>
+        <activity android:name="com.dgssm.beaconbus.searchedactivity.SearchRoute" ></activity>
+        <activity android:name="com.dgssm.beaconbus.searchedactivity.SearchRouteDetail" ></activity>
+        <activity android:name="com.dgssm.beaconbus.beacon.DetectedBus" ></activity>
+        <activity android:name="com.dgssm.beaconbus.beacon.DetectedBusSelectDestination" ></activity>
+        <activity android:name="com.dgssm.beaconbus.beacon.ArriveDestination" ></activity>
+        <activity android:name="com.dgssm.beaconbus.Test" ></activity>
+        <!-- /Activity -->
+
+        <!-- Service -->
+        <service android:name="com.dgssm.beaconbus.GCMIntentService" ></service>
+        <service android:name="com.dgssm.beaconbus.beacon.SocketServiceBusStop" ></service>
+        <service android:name="com.dgssm.beaconbus.beacon.SocketServiceBus" ></service>
+                
+        <service
+            android:name="com.radiusnetworks.ibeacon.service.IBeaconService"
+            android:enabled="true"
+            android:exported="true"
+            android:isolatedProcess="false"
+            android:label="iBeacon" >
+        </service>
+        <service
+            android:name="com.radiusnetworks.ibeacon.IBeaconIntentProcessor"
+            android:enabled="true" >
+            <meta-data
+                android:name="background"
+                android:value="true" />
+
+            <intent-filter android:priority="1" >
+                <action android:name="com.radiusnetworks.ibeaconreference.DID_RANGING" />
+                <action android:name="com.radiusnetworks.ibeaconreference.DID_MONITORING" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.dgssm.beaconbus.beacon.BeaconDetactorService"
+            android:enabled="true" >
+            <meta-data
+                android:name="background"
+                android:value="true" />
+            <intent-filter>
+                <action android:name="BeaconDetactorService" />
+            </intent-filter>
+        </service>
+		<!-- /Service -->
+        
+        <!-- BroadcastReceiver -->
+        <receiver
+            android:name="com.dgssm.beaconbus.beacon.RestartServiceReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:label="RestartService"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <!-- Receives the actual messages. -->
+	            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+	            <!-- Receives the registration id. -->
+	            <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+	            <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="com.dgssm.beaconbus" />
+            </intent-filter>
+        </receiver>
+        <!-- /BroadcastReceiver -->
+        
+    </application>
+
+</manifest>

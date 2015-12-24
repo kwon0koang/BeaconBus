@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_sub_color2"
+    android:padding="10dp" >
+
+    <com.dgssm.beaconbus.custom.MarqueeTextView
+        android:id="@+id/tvBus1People"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic"
+        android:textSize="40dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@color/theme_main_color"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="목적지를 선택해주세요." />
+
+    <EditText
+        android:id="@+id/etSearchBusStop"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvBus1People"
+        android:layout_toLeftOf="@+id/imgSearchBusStopX"
+        android:ems="10"
+        android:hint="정류소명/ID를 입력하세요." >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imgSearchBusStopX"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvBus1People"
+        android:src="@drawable/btn_x" />
+    
+	<ListView
+        android:id="@+id/lvBusStop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/etSearchBusStop"
+        android:cacheColorHint="#00000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

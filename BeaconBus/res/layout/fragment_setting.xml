@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_sub_color2"
+    android:padding="10dp" >
+
+    <Button
+        android:id="@+id/btnUpdateDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/theme_sub_color"
+        android:textColor="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnInquire"
+        android:textStyle="bold"
+        android:text="버스 데이터 업데이트" />
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="1.3.5"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnInquire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_sub_color"
+        android:layout_marginBottom="5dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvVersion"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:text="애플리케이션 문의 및 오류 보고" />
+
+    <Button
+        android:id="@+id/btnRemoveSearchHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/theme_sub_color"
+        android:textColor="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnUpdateDatabase"
+        android:textStyle="bold"
+        android:text="검색기록 모두 삭제" />
+
+    <ToggleButton
+        android:id="@+id/tbAlarmNextBusStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:checked="true"
+        android:text="다음 정류장 알림"
+        android:textOff="다음 정류장 알림 꺼짐"
+        android:textOn="다음 정류장 알림 켜짐" />
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/tvTransit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="tvTransit"
+            android:textStyle="bold|italic"
+            android:textColor="@color/theme_main_color"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tvTotalDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ff0000"
+            android:text="tvTotalDistance"
+            android:textSize="20dp" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <com.dgssm.beaconbus.custom.MarqueeTextView
+            android:id="@+id/tvRoute1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="tvRoute1"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/tvBusStopStart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#111111"
+            android:text="tvBusStopStart1" />
+        
+        <TextView
+            android:id="@+id/tvBusStopEnd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#111111"
+            android:text="tvBusStopEnd1" />
+        
+        <TextView
+            android:id="@+id/tvDistanceGap1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#111111"
+            android:text="tvDistanceGap1" />
+
+        <com.dgssm.beaconbus.custom.MarqueeTextView
+            android:id="@+id/tvRoute2"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:ellipsize="marquee"
+	        android:marqueeRepeatLimit="marquee_forever"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:text="tvRoute2" />
+
+        <TextView
+            android:id="@+id/tvBusStopStart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#111111"
+            android:text="tvBusStopStart2" />
+
+        <TextView
+            android:id="@+id/tvBusStopEnd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#111111"
+            android:text="tvBusStopEnd2" />
+
+        <TextView
+            android:id="@+id/tvDistanceGap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#111111"
+            android:text="tvDistanceGap2" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

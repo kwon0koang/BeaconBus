@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BeaconBus</string>
+    <string name="title_section_favorites">즐겨찾기</string>
+    <string name="title_section_search">검색</string>
+    <string name="title_section_nearby_busstop">주변정류장</string>
+    <string name="title_section_setting">설정</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/ivBus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_launcher" />
+
+    <com.dgssm.beaconbus.custom.MarqueeTextView
+        android:id="@+id/tvBusNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivBus"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/ivBus"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="tvBusNum"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rlBus1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivBus"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp" >
+
+        <TextView
+            android:id="@+id/tvBusRealNum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="0000"
+            android:textColor="#333333"
+            android:textSize="23dp" />
+        
+        <TextView
+            android:id="@+id/tvBus1Seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           	android:layout_alignParentRight="true"
+            android:layout_marginLeft="3dp"
+            android:text="22"
+            android:textColor="#333333"
+            android:textSize="23dp" />
+        
+        <com.dgssm.beaconbus.custom.MarqueeTextView
+            android:id="@+id/tvNowBusStop1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvBusRealNum1"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/tvTime1"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="tvNowBusStop"
+            android:textColor="@color/theme_main_color"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tvBusStopAmount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBusRealNum1"
+            android:layout_alignParentRight="true"
+            android:textColor="#666666"
+            android:text="Amount"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tvTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBusRealNum1"
+            android:layout_toLeftOf="@+id/tvBusStopAmount1"
+            android:text="Time"
+            android:textColor="#ff0000"
+            android:layout_marginRight="5dp"
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tvBus1Seat" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivSeat1"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_toLeftOf="@+id/tvBus1Seat"
+            android:src="@drawable/bus_info_seat" />
+
+        <TextView
+            android:id="@+id/tvBus1People"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/ivSeat1"
+            android:text="11"
+            android:textColor="#333333"
+            android:textSize="23dp" />
+
+        <ImageView
+            android:id="@+id/ivPeople1"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_toLeftOf="@+id/tvBus1People"
+            android:src="@drawable/bus_info_people" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBus2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlBus1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/tvBusRealNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="0000"
+            android:textColor="#333333"
+            android:textSize="23dp" />
+        
+        <TextView
+            android:id="@+id/tvBus2Seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="3dp"
+            android:text="22"
+            android:textColor="#333333"
+            android:textSize="23dp" />
+        
+        <com.dgssm.beaconbus.custom.MarqueeTextView
+            android:id="@+id/tvNowBusStop2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvBusRealNum2"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/tvTime2"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="tvNowBusStop"
+            android:textColor="@color/theme_main_color"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tvBusStopAmount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBusRealNum2"
+            android:layout_alignParentRight="true"
+            android:textColor="#666666"
+            android:text="Amount"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tvTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBusRealNum2"
+            android:layout_toLeftOf="@+id/tvBusStopAmount2"
+            android:text="Time"
+            android:textColor="#ff0000"
+            android:layout_marginRight="5dp"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/ivSeat2"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_toLeftOf="@+id/tvBus2Seat"
+            android:src="@drawable/bus_info_seat" />
+
+        <TextView
+            android:id="@+id/tvBus2People"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/ivSeat2"
+            android:text="11"
+            android:textColor="#333333"
+            android:textSize="23dp" />
+
+        <ImageView
+            android:id="@+id/ivPeople2"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_toLeftOf="@+id/tvBus2People"
+            android:src="@drawable/bus_info_people" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

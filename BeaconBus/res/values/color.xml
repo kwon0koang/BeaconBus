@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BeaconBus</string>
+    <string name="title_section_favorites">즐겨찾기</string>
+    <string name="title_section_search">검색</string>
+    <string name="title_section_nearby_busstop">주변정류장</string>
+    <string name="title_section_setting">설정</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    
+    <!-- 밑으로 갈수록 연해짐 -->
+    <color name = "theme_sub_color3">#004fb8</color>
+    <color name = "theme_main_color">#006dff</color>		
+    <color name = "theme_sub_color">#81b7ff</color>
+    <color name = "theme_sub_color2">#e7f1ff</color>
+    
+    <color name = "fragment_setting_button_color">#fff9ad</color>
+    
+
+</resources>
