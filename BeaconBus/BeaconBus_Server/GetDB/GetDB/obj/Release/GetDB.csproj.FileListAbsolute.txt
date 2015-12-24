@@ -1,0 +1,10 @@
+C:\Users\wdh2100\Desktop\KingsMem\02. 양덕규\DBGetProject\GetDB\GetDB\bin\Release\GetDB.exe.config
+C:\Users\wdh2100\Desktop\KingsMem\02. 양덕규\DBGetProject\GetDB\GetDB\bin\Release\GetDB.exe
+C:\Users\wdh2100\Desktop\KingsMem\02. 양덕규\DBGetProject\GetDB\GetDB\bin\Release\GetDB.pdb
+C:\Users\wdh2100\Desktop\KingsMem\02. 양덕규\DBGetProject\GetDB\GetDB\bin\Release\System.Data.SQLite.dll
+C:\Users\wdh2100\Desktop\KingsMem\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Release\GetDB.csprojResolveAssemblyReference.cache
+C:\Users\wdh2100\Desktop\KingsMem\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Release\GetDB.GetDBForm.resources
+C:\Users\wdh2100\Desktop\KingsMem\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Release\GetDB.Properties.Resources.resources
+C:\Users\wdh2100\Desktop\KingsMem\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Release\GetDB.csproj.GenerateResource.Cache
+C:\Users\wdh2100\Desktop\KingsMem\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Release\GetDB.exe
+C:\Users\wdh2100\Desktop\KingsMem\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Release\GetDB.pdb

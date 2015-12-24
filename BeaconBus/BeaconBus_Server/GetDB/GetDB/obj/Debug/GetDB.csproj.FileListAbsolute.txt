@@ -1,0 +1,31 @@
+F:\KingsMEM\02. 양덕규\DBGetProject\GetDB\GetDB\bin\Debug\GetDB.exe.config
+F:\KingsMEM\02. 양덕규\DBGetProject\GetDB\GetDB\bin\Debug\GetDB.exe
+F:\KingsMEM\02. 양덕규\DBGetProject\GetDB\GetDB\bin\Debug\GetDB.pdb
+F:\KingsMEM\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.csprojResolveAssemblyReference.cache
+F:\KingsMEM\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.Properties.Resources.resources
+F:\KingsMEM\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.csproj.GenerateResource.Cache
+F:\KingsMEM\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.exe
+F:\KingsMEM\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.pdb
+F:\KingsMEM\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.GetDBForm.resources
+F:\KingsMEM\02. 양덕규\DBGetProject\GetDB\GetDB\bin\Debug\System.Data.SQLite.dll
+F:\KingsMEM\02. 양덕규\DBGetProject\GetDB\GetDB\bin\Debug\System.Data.SQLite.pdb
+C:\Users\Administrator\Desktop\DBGetProject\GetDB\GetDB\bin\Debug\GetDB.exe.config
+C:\Users\Administrator\Desktop\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.exe
+C:\Users\Administrator\Desktop\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.pdb
+C:\Users\Administrator\Desktop\DBGetProject\GetDB\GetDB\bin\Debug\GetDB.exe
+C:\Users\Administrator\Desktop\DBGetProject\GetDB\GetDB\bin\Debug\GetDB.pdb
+C:\Users\Administrator\Desktop\DBGetProject\GetDB\GetDB\bin\Debug\System.Data.SQLite.pdb
+C:\Users\Administrator\Desktop\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.GetDBForm.resources
+C:\Users\Administrator\Desktop\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.Properties.Resources.resources
+C:\Users\Administrator\Desktop\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Kings_Mem\02. 양덕규\DBGetProject\GetDB\GetDB\bin\Debug\GetDB.exe.config
+C:\Users\Administrator\Desktop\Kings_Mem\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.exe
+C:\Users\Administrator\Desktop\Kings_Mem\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.pdb
+C:\Users\Administrator\Desktop\Kings_Mem\02. 양덕규\DBGetProject\GetDB\GetDB\bin\Debug\GetDB.exe
+C:\Users\Administrator\Desktop\Kings_Mem\02. 양덕규\DBGetProject\GetDB\GetDB\bin\Debug\GetDB.pdb
+C:\Users\Administrator\Desktop\Kings_Mem\02. 양덕규\DBGetProject\GetDB\GetDB\bin\Debug\System.Data.SQLite.pdb
+C:\Users\Administrator\Desktop\Kings_Mem\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Kings_Mem\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.GetDBForm.resources
+C:\Users\Administrator\Desktop\Kings_Mem\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Kings_Mem\02. 양덕규\DBGetProject\GetDB\GetDB\obj\Debug\GetDB.csproj.GenerateResource.Cache
